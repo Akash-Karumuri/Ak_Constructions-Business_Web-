@@ -231,6 +231,7 @@ footer .row div p{
     margin-left: 10px;
     color: white;
     font-weight: bolder;
+    margin-top: 50px;
 }
 .page button{
     margin-left: 20px;
@@ -239,6 +240,7 @@ footer .row div p{
     color:white;
     border: 0;
     font-weight: bolder;
+    margin-top: 50px;
 }
 .page button:hover{
     color: gold;

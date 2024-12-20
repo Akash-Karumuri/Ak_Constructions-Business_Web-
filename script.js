@@ -17,18 +17,21 @@ function validate() {
     const lname = document.getElementById("lname").value;
     const mail = document.getElementById("mail").value;
     const mobile = document.getElementById("mobile").value;
+    const service = document.querySelector(".form-control.form-select").value;
     
     // Error Message Elements
     const nameError = document.getElementById("nameError");
     const nameError2 = document.getElementById("nameError2");
     const mailError = document.getElementById("mailError");
     const mobileError = document.getElementById("mobileError");
+    const serviceError = document.getElementById("serviceError");
 
     // Validation Status Flags
     let fnameStatus = false;
     let lnameStatus = false;
     let mailStatus = false;
     let mobileStatus = false;
+    let serviceStatus = false;
 
     // Regular Expression for Email and Phone Validation
     const alpExp = /^[a-zA-Z ]+$/; 
@@ -76,7 +79,14 @@ function validate() {
         mobileError.textContent = "";
         mobileStatus = true;
     }
+    // select validation
+    if (service === "Select Service") {
+        serviceError.textContent = "Please select a service";
+    } else {
+        serviceError.textContent = "";
+        serviceStatus = true;
+    }
 
     // Return overall validation status
-    return fnameStatus && lnameStatus && mailStatus && mobileStatus;
+    return fnameStatus && lnameStatus && mailStatus && mobileStatus&& serviceStatus;
 }

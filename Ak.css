@@ -177,9 +177,7 @@ footer{
     color: white;
 }
 footer h4{
-    text-decoration: underline white;
-    text-underline-offset: 10px;
-    margin-bottom: 30px;
+    text-decoration:underline white;
     text-align: left;
 }
 #follow{
@@ -202,14 +200,9 @@ footer .row div p{
     text-align: left;
 }
 .quick a{
-    text-align: left;
-    line-height: 0;
-    font-size: 18px;
-    color: white;
     text-decoration: none;
-}
-.quick a:hover{
-    color: #044eec;
+    color: white;
+    line-height: 2;
 }
 /* ===========================================================Construction============================================================================ */
 .page{
@@ -452,29 +445,23 @@ footer .row div p{
     font-size: 30px;
 }
 .contact-page form{
-    width: 100%;
     background-color:lightgray;
-    padding: 50px;
-    line-height: 2;
     border-radius: 10px;
 }
 .contact-page form input{
-    width: 80%;
     border-radius: 5px;
-    border: 0;
+}
+.contact-page form button{
+    justify-content:center;
+    align-items: center;
+    display: flex;
 }
 .contact-page form label{
     margin-bottom: 0px;
 }
-form .submit input{
-    background-color:#044eec;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    width: 20%;
-}
 form p{
     color: red;
+    font-size: 15px !important;
 }
 .thank{
     width: 100%;

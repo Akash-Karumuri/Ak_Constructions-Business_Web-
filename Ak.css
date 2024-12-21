@@ -394,10 +394,6 @@ footer .row div p{
 }
 .renovation figure{
     border-radius: 10px;
-    box-shadow: 10px 10px 30px #454545;
-}
-.renovation figure:hover{
-    transform: scale(1.05);
 }
 .renovation figure p{
     text-align: left;

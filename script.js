@@ -1,11 +1,14 @@
 const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-item a');
-    navLinks.forEach(link => {
-     
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
+const navLinks = document.querySelectorAll('.nav-item a');
+navLinks.forEach(link => {
+    let linkPath = link.getAttribute('href');
+    if (!linkPath.startsWith('/')) {
+        linkPath = '/' + linkPath;
+    }
+    if (linkPath === currentPath) {
+        link.classList.add('active');
+    }
+});
 
 
 // =============================================================================================================================================
